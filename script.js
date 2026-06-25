@@ -73,13 +73,23 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (distance < 0) {
             clearInterval(countdownFunction);
-            document.getElementById("days").innerText = "00";
-            document.getElementById("hours").innerText = "00";
-            document.getElementById("minutes").innerText = "00";
-            document.getElementById("seconds").innerText = "00";
             
-            const title = document.querySelector(".countdown-title");
-            if(title) title.innerText = "It's your special day! 🎉";
+            // Hide the countdown
+            const countdownWrapper = document.getElementById("countdown-wrapper");
+            if(countdownWrapper) {
+                countdownWrapper.classList.add("d-none");
+                countdownWrapper.classList.remove("d-flex");
+            }
+            
+            // Show the main birthday website
+            const mainContent = document.getElementById("main-birthday-content");
+            if(mainContent) {
+                mainContent.classList.remove("d-none");
+                mainContent.classList.add("d-flex");
+                
+                // Add a smooth fade-in effect dynamically
+                mainContent.style.animation = "fadeIn 1.5s ease-in-out forwards";
+            }
             return;
         }
 

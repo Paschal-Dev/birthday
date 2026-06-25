@@ -20,36 +20,41 @@
     <!-- Main Container -->
     <div class="container main-content d-flex flex-column align-items-center justify-content-center min-vh-100 position-relative z-index-1">
         
-        <!-- Hero Header -->
-        <header class="text-center mb-4 hero-text">
-            <h1 class="display-1 fw-bold main-title">Happy Birthday</h1>
-            <h2 class="subtitle">My Superwoman</h2>
-        </header>
-
-        <!-- 3D Countdown -->
-        <div class="countdown-container mb-5">
-            <h3 class="text-center mb-3 countdown-title">Counting down to your special day...</h3>
-            <div class="countdown-timer d-flex flex-wrap gap-3 gap-md-4 justify-content-center">
-                <div class="time-box tilt-card">
-                    <div class="time-value" id="days">00</div>
-                    <div class="time-label">Days</div>
-                </div>
-                <div class="time-box tilt-card">
-                    <div class="time-value" id="hours">00</div>
-                    <div class="time-label">Hours</div>
-                </div>
-                <div class="time-box tilt-card">
-                    <div class="time-value" id="minutes">00</div>
-                    <div class="time-label">Minutes</div>
-                </div>
-                <div class="time-box tilt-card">
-                    <div class="time-value" id="seconds">00</div>
-                    <div class="time-label">Seconds</div>
+        <!-- 3D Countdown Wrapper -->
+        <div id="countdown-wrapper" class="w-100 d-flex flex-column align-items-center justify-content-center">
+            <div class="countdown-container mb-5">
+                <h3 class="text-center mb-4 countdown-title" style="font-size: 1.8rem; font-weight: 400; color: #fff;">Happy Bithday in advance my oversabi 🌚🌚</h3>
+                <div class="countdown-timer d-flex flex-wrap gap-3 gap-md-4 justify-content-center">
+                    <div class="time-box tilt-card">
+                        <div class="time-value" id="days">00</div>
+                        <div class="time-label">Days</div>
+                    </div>
+                    <div class="time-box tilt-card">
+                        <div class="time-value" id="hours">00</div>
+                        <div class="time-label">Hours</div>
+                    </div>
+                    <div class="time-box tilt-card">
+                        <div class="time-value" id="minutes">00</div>
+                        <div class="time-label">Minutes</div>
+                    </div>
+                    <div class="time-box tilt-card">
+                        <div class="time-value" id="seconds">00</div>
+                        <div class="time-label">Seconds</div>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="row w-100 justify-content-center align-items-center mb-5 gap-5">
+        <!-- Main Birthday Website Content -->
+        <div id="main-birthday-content" class="w-100 d-none flex-column align-items-center justify-content-center fade-in">
+            
+            <!-- Hero Header -->
+            <header class="text-center mb-4 hero-text">
+                <h1 class="display-1 fw-bold main-title">Happy Birthday</h1>
+                <h2 class="subtitle">My Superwoman</h2>
+            </header>
+
+            <div class="row w-100 justify-content-center align-items-center mb-5 gap-5">
             <!-- Message Card (Glassmorphism + 3D Tilt) -->
             <div class="col-md-5">
                 <div class="message-card tilt-card p-4 p-md-5">
@@ -89,6 +94,7 @@
                 </div>
             </div>
         </div>
+        </div> <!-- End of main-birthday-content -->
     </div>
 
     <!-- Background Animated Orbs -->
